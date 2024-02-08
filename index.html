@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>iksm</title>
+        <meta name="description" content="programmer.lol"/>
+        <meta property="og:title" content="iksm"/>
+        <meta property="og:description" content="programmer.lol"/>
+        <meta property="og:image" content="https://cdn.shopify.com/s/files/1/0559/4788/6783/files/A_AP_ROCKY.png?v&#x3D;1679069333"/>
+        <meta property="og:url" content="https://iksm.lol"/>
+        <meta property="og:type" content="website"/>
+        <meta name="theme-color" content="#ffffff"/>
+        <link rel="stylesheet" href="static/assets/css/landing.css">
+        <link rel="stylesheet" href="static/assets/css/misc.css">
+        <link rel="icon" type="image/x-icon" href="https://cdn.shopify.com/s/files/1/0559/4788/6783/files/A_AP_ROCKY.png?v&#x3D;1679069333">
+    </div>
+    <audio id="myAudio" loop>
+        <source src="media/iksm.mp3" type="audio/mpeg">
+    </audio>
+</div>
+</div>
+</div>
+
+
+<style>
+@font-face {
+    font-family: custom-font;
+    src: url(https://fonts.cdnfonts.com/s/85546/Satoshi-Medium.woff);
+}
+* {
+    font-family: custom-font;
+}
+
+body {
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    color: #fff;
+    background-color: #1F2128;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.imgundragable {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.customglow-username {
+    font-size: 30px;
+    margin-right: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 2rem;
+    text-align: center;
+    filter: drop-shadow(0 0 0.2rem #ffffff);
+}
+
+
+.username-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 20px #ffffff;
+    }
+    50% {
+        box-shadow: 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff;
+    }
+    100% {
+        box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 20px #ffffff;
+    }
+}
+
+.avatar_effect {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin: 0 auto;
+    animation: glow 2s infinite;
+    margin-bottom: 10px;
+}
+
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+
+.rainbow-username {
+  font-size: 30px;
+  font-weight: bold;
+  
+  margin-right: 10px;
+  color: #ff0000;
+  animation: animate 3s linear infinite;
+  text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff0000;
+}
+
+@keyframes animate {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+  /* border */
+  .border {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      padding: 39px 27px;
+      width: 100%;
+      max-width: 35.9rem;
+      border-radius: 35px;
+      backdrop-filter: blur(7px);
+      background-color: rgb(255, 255, 255, 0.13) !important;
+      box-shadow: 0 0 2.5px #ffffff;
+     backdrop-filter: blur(7px);
+    background-color: rgb(0, 0, 0, 0.13) !important;
+    box-shadow: 0 0 2.5px #ffffff;
+    background: linear-gradient(
+        45deg, 
+        rgba(255, 255, 255, 0) 0%, 
+        rgba(255, 255, 255, 0.1) 40%, 
+        rgba(255, 255, 255, 0.1) 60%, 
+        rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 200% 200%;
+    animation: shine 4s ease-in-out infinite, slide 2s forwards;
+  }
+
+
+@keyframes shine {
+    0% {
+        background-position: 100% 0%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translate(-50%, -60%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+
+  @media (max-width : 480px) {
+      .border {
+          left: 50%;
+          padding: 0px, 0px;
+          width: 80%;
+          max-width: 100%;
+          border-radius: 21px;
+      }
+  }
+  
+.role-icon-wrapper {
+    padding: 7px 10px 1.5px;
+    border-radius: 50px;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    display: inline-flex;
+    place-items: center;
+    margin: 2px auto 20px;
+    background-color: rgba(0, 0, 0, 0.09);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.icon:active {
+  transform: scale(1.2);
+}
+
+.icon {
+  transition: all 0.2s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.pixelated {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+    background: transparent url(https://i.imgur.com/EyzV6w4.png) repeat 0 0;
+}
+
+
+
+  /* icons */
+  social-icons {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+  }
+  
+  .icon {
+     margin: 3px;
+     width: 35px;
+     height: 35px;
+  }
+  
+  .icon-link {
+      margin: 10px;
+      text-decoration: none;
+      text-align: center;
+  }
+  
+  .icon-link:not(:nth-child(-n+8)) {
+      display: none;
+  }
+  
+  /* social media */
+  
+  .social-media {
+      text-align: center;
+      position: relative;
+  }
+  
+  .description {
+    font-size: 17px;
+        margin: 14px 0;
+      color: #fff;
+  }
+  
+  .username {
+      color: #777777;
+      font-size: 30px;
+      margin-right: 10px;
+      
+      font-weight: bold;
+      text-shadow: 0 0 10px rgba(150, 47, 191, 0.7), 0 0 20px rgba(255, 0, 80, 0.7), 0 0 30px rgba(0, 242, 234, 0.7);
+      animation: username 13s infinite;
+  }
+  
+
+  
+  .normal-username {
+    color: #fff;
+    font-size: 30px;
+    margin-right: 10px;
+    
+    font-weight: bold;
+}
+
+  
+
+.role-icon {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.role-icon img {
+    width: 31px;
+    height: 31px;
+}
+
+
+
+  .sparky-effect {
+    background-image: url(static/userinfo/effects/sparkle.gif);
+    display: inline-block;
+    padding: 10px;
+}
+
+
+  .glowblue-username {
+    font-size: 30px;
+    margin-right: 10px;
+    
+    font-weight: bold;
+    line-height: 2rem;
+    text-align: center;
+    text-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff, 0 0 40px #0000ff, 0 0 50px #0000ff, 0 0 60px #0000ff, 0 0 70px #0000ff, 0 0 80px #0000ff;
+}
+
+
+
+
+
+@keyframes popin {
+    0% { transform: scale(0.5) translateX(-50%); }
+    100% { transform: scale(1) translateX(-50%); }
+}
+
+.tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f0f0f0;
+    font-weight: 580!important;
+    user-select: none;
+    padding: 5px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+    display: block;
+    z-index: 1;
+    transform: scale(0) translateX(-50%);
+    left: 50%;
+    bottom: 110%;
+    letter-spacing: .01cm!important;
+    font-size: 14.3px;
+    transition: transform 0.1s ease-out;
+}
+
+
+.role-icon:hover .tooltip,
+.role-icon:focus-within .tooltip {
+    animation: popin 0.1s ease-out forwards;
+}
+
+
+
+  
+  /* glow animation */
+  
+  @keyframes username {
+      0% {
+          text-shadow: 0px 0px 9px #5539cc;
+          opacity: 1;
+      }
+      14% {
+          text-shadow: 0px 0px 9px #5539cc;
+          opacity: 0.50;
+      }
+      20% {
+          text-shadow: 0px 0px 5px #feda75,
+          0px 0px 5px #fa7e1e,
+          0px 0px 5px #d62976,
+          0px 0px 5px #962fbf,
+          0px 0px 5px #4f5bd5;
+          opacity: 1;
+      }
+      30% {
+          text-shadow: 0px 0px 5px #229ED9;
+          opacity: 0.25;
+      }
+      40% {
+          text-shadow: 0px 0px 10px #A00003;
+          opacity: 1;
+      }
+      50% {
+          text-shadow: 0px 0px 10px #FFFC00;
+          opacity: 0.25;
+      }
+      60% {
+          text-shadow: 0px 0px 5px #0079C1;
+          opacity: 1;
+      }
+      70% {
+          text-shadow: 0px 0px 5px gray;
+          opacity: 0.25;
+      }
+      80% {
+          text-shadow: 0px 0px 5px blue;
+          opacity: 1;
+      }
+      90% {
+          text-shadow: 0px 0px 5px #E60023;
+          opacity: 0.25;
+      }
+  }
+  
+
+.videobg {
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    position: absolute
+}
+
+#vidx {
+    width: 100vw;
+    height: 100vh;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1
+}
+
+@keyframes fadeinout{
+    0%{
+        background-position:-500%
+    }
+    100%{
+        background-position:500%
+    }
+}
+.fadeinoutname{
+    margin-right: 10px;
+    position:relative;
+    overflow:hidden;
+    background: linear-gradient(90deg,#000,#ffffff,#ffffff,#000);
+    background-repeat:no-repeat;
+    background-size:80%;
+    animation:fadeinout 2s linear infinite;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent
+}
+
+
+
+    </style>
+
+<style>
+.status {
+    color: #f23f43;
+    position: absolute;
+    font-size: 19.5px;
+    bottom: 3.5px;
+    left: 55.5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.statuscontainer_dnd {
+    color: #f23f43;
+    position: absolute;
+    font-size: 19.5px;
+    bottom: 3.5px;
+    left: 55.5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.statuscontainer_streaming {
+    color: #b93ff2;
+    position: absolute;
+    font-size: 19.5px;
+    bottom: 3.5px;
+    left: 55.5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.statuscontainer_idle {
+    color: #eff23f;
+    position: absolute;
+    font-size: 19.5px;
+    bottom: 3.5px;
+    left: 55.5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.statuscontainer_online {
+    color: #08d334;
+    position: absolute;
+    font-size: 19.5px;
+    bottom: 3.5px;
+    left: 55.5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.statuscontainer_offline {
+    color: #858585;
+    position: absolute;
+    font-size: 19.5px;
+    bottom: 3.5px;
+    left: 55.5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none
+}
+
+.container, .discordcontainer {
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+    display: inline-flex;
+    place-items: center;
+}
+
+.profile-pic, .avatarcontainer {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.info h1, .infocontainer h1 {
+    text-align: left;
+    padding: 0;
+    margin: 0 0 0 11px;
+    font-size: 19.7px;
+    max-width: 240px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 630;
+}
+
+.status, .statuscontainer_dnd, .statuscontainer_idle, .statuscontainer_online {
+    position: absolute;
+    font-size: 19.5px;
+    bottom: 3.5px;
+    left: 55.5px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.status {
+    color: #f23f43;
+}
+
+.statuscontainer_dnd {
+    color: #f23f43;
+}
+
+.statuscontainer_idle {
+    color: #eff23f;
+}
+
+.statuscontainer_online {
+    color: #08d334;
+}
+
+.infocontainer h3 {
+    text-align: left;
+    padding: 0;
+    font-size: 13.2px;
+    font-weight: 520;
+    max-width: 270px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 3.5px 6px 0 11px;
+}
+
+@media (max-width: 767px) {
+    .info h1, .infocontainer h1 {
+        max-width: 115px;
+    }
+
+    .infocontainer h3 {
+        max-width: 115px;
+    }
+}
+
+@media (min-width: 768px) {
+    .info h1, .infocontainer h1 {
+        max-width: 170px;
+    }
+
+    .infocontainer h3 {
+        max-width: 170px;
+    }
+}
+
+@media (min-width: 992px) {
+    .info h1, .infocontainer h1 {
+        max-width: 210px;
+    }
+
+    .infocontainer h3 {
+        max-width: 210px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .info h1, .infocontainer h1 {
+        max-width: 240px;
+    }
+
+    .infocontainer h3 {
+        max-width: 270px;
+    }
+}
+
+@media (max-width: 359px) {
+    .info h1, .infocontainer h1 {
+        max-width: 100px;
+    }
+
+    .infocontainer h3 {
+        max-width: 100px;
+    }
+}
+
+.emojicss {
+    margin-top: -1px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 19px;
+    width: auto
+}
+
+
+.layout_2_4510bb0b2f33c8542865ef1267675955_double_wrapper__E_qyW {
+    flex-basis: 50%;
+    box-sizing: border-box;
+}
+
+.layout_2_4510bb0b2f33c8542865ef1267675955_other__JPn53 {
+    margin-left: 4px;
+    border-radius: 12px;
+}
+
+.layout_2_4510bb0b2f33c8542865ef1267675955_guild_info__rVXiI {
+    margin-left: 10px;
+    text-align: left;
+    display: block;
+    max-width: 201px;
+    min-width: 200px;
+}
+
+.layout_2_4510bb0b2f33c8542865ef1267675955_discord_invite__gJmuE {
+    display: flex;
+    height: 100%;
+    padding: 5px 10px;
+    place-items: center;
+    margin-top: -5px;
+}
+.layout_2_4510bb0b2f33c8542865ef1267675955_discord_invite__gJmuE img {
+    min-height: 60px;
+    max-height: 61px;
+    border-radius: 28%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.layout_2_4510bb0b2f33c8542865ef1267675955_guild_info__rVXiI a {
+    text-decoration-color: initial;
+    background-color: rgb(21, 79, 42);
+    color: rgb(232, 230, 227);
+}
+.layout_2_4510bb0b2f33c8542865ef1267675955_guild_info__rVXiI a {
+    text-decoration: none;
+    background-color: #1a6334;
+    color: #fff;
+    font-size: 12px;
+    padding: 0 7px;
+    border-radius: 8px;
+}
+.layout_2_4510bb0b2f33c8542865ef1267675955_guild_info__rVXiI a {
+    font-size: 12.5px!important;
+    padding: 1px 7.5px!important;
+    font-weight: 400;
+}
+#myLink {
+ cursor: pointer;
+}
+</style>
+
+<script>
+var rev = "fwd";
+
+function titlebar(val) {
+    var msg = "iksm";
+    var speed = 100;
+    var pos = val;
+    var le = msg.length;
+    if (rev == "fwd") {
+        if (pos < le) {
+            pos = pos + 1;
+            scroll = msg.substr(0, pos);
+            document.title = "   > " + scroll + " <";
+            timer = window.setTimeout("titlebar(" + pos + ")", speed);
+        } else {
+            rev = "bwd";
+            timer = window.setTimeout("titlebar(" + pos + ")", speed);
+        }
+    } else {
+        if (pos > 0) {
+            pos = pos - 1;
+            var ale = le - pos;
+            scrol = msg.substr(0, pos);
+            document.title = "   > " + scrol + " <";
+            timer = window.setTimeout("titlebar(" + pos + ")", speed);
+        } else {
+            rev = "fwd";
+            timer = window.setTimeout("titlebar(" + pos + ")", speed);
+        }
+    }
+}
+titlebar(1);
+
+</script>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+  <!-- bio link by cryart
+  
+  
+    height: 80.2px;
+  line 467
+   -->
+<body>      
+
+ <div id="enter">
+        <p>Click here</p>
+</div>
+
+<div style="background-image:url(https://kudos.tv/cdn/shop/files/Anime_Road_300x.gif?v&#x3D;1679069498); position: absolute; height: 100%; width: 100%; background-size: cover; background-position: 50%; z-index: -1;"></div>
+
+<div class="videobg">
+  <video id="vidx" loop playsinline draggable="false" autoplay>
+    <source src="https://kudos.tv/cdn/shop/files/Anime_Road_300x.gif?v&#x3D;1679069498" type="video/mp4" id="video-source" /></video>
+</div>
+
+<div class="pixelated"></div>
+
+
+<div class="landing" id="landing">
+      
+<div id="particles-js"></div>
+
+<div class="border">
+  <div class="avatar">
+      <div class="avatar-container" style="display: flex; justify-content: center; align-items: center;">
+          <img src="https://cdn.shopify.com/s/files/1/0559/4788/6783/files/A_AP_ROCKY.png?v&#x3D;1679069333" alt="Avatar" class="imgundragable inline-effect avatar">
+      </div>
+  </div>
+
+
+        <div class="social-media">
+            <!-- username -->
+
+
+            <div class="username-badge">
+              <div class="username-container">
+                <h1 class="customglow-username inline-effect">iksm</h1>
+              </div>
+            </div>
+
+
+
+
+
+
+            <!-- roles -->
+            <div class="role-icon-wrapper">
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+<div id="discord" class="layout_2_4510bb0b2f33c8542865ef1267675955_act_container__GQfSb" style="justify-content: center">
+<div id="discordrpc"></div>
+<div id="discordrpcissue"></div>
+<div id="discordserver"></div>
+</div>
+
+
+            <!-- description  -->
+              <p class="description typewrite", data-period="1000" data-type='["programmer.lol "]'>
+                <span class="wrap"></span>
+              </p>
+            
+        <div id="spotify"></div>
+        <div style="display: flex; align-items: center; justify-content: center;">
+          <svg style="filter: drop-shadow(0 0 0.2rem #ffffff); margin-right: 4px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path d="M15.0007 12C15.0007 13.6569 13.6576 15 12.0007 15C10.3439 15 9.00073 13.6569 9.00073 12C9.00073 10.3431 10.3439 9 12.0007 9C13.6576 9 15.0007 10.3431 15.0007 12Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M12.0012 5C7.52354 5 3.73326 7.94288 2.45898 12C3.73324 16.0571 7.52354 19 12.0012 19C16.4788 19 20.2691 16.0571 21.5434 12C20.2691 7.94291 16.4788 5 12.0012 5Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+          </svg>
+          <span style="font-size: 0.9em;">5</span>
+          <span style="color: #ffffff; margin: 0 4px;">|</span>
+          <svg fill="#ffffff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 395.71 395.71" xml:space="preserve" style="filter: drop-shadow(0 0 0.2rem #ffffff); margin-right: 4px;">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <g>
+                <path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738 c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388 C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191 c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z"></path>
+              </g>
+            </g>
+          </svg>
+          <span style="font-size: 0.9em;">Program World</span>
+        </div>
+          <!-- socials  -->
+          <div style="
+              margin: 0 .5rem;
+              color: #fff;
+              font-size: 2rem;
+              transition: all .2s ease-in-out;
+              margin-top: 10px;
+          ">
+            <a href="https://discord.com/users/id/1184009692545028100" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="#ffffff" height="36" width="36" style="
+              filter: drop-shadow(0 0 0.2rem #ffffff);
+              ">
+                  <path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"></path>
+              </svg>
+            </a>
+            <a href="https://instagram.com/iksm_coding" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#ffffff" height="36" width="36" style="filter: drop-shadow(0 0 0.2rem #ffffff);">
+                  <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+              </svg>
+            </a>
+            <a href="https://t.me/iksmcoding" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" fill="#ffffff" height="36" width="36" style="filter: drop-shadow(0 0 0.2rem #ffffff);">
+                  <path d="M248 8C111.033 8 0 119.033 0 256s111.033 248 248 248 248-111.033 248-248S384.967 8 248 8Zm114.952 168.66c-3.732 39.215-19.881 134.378-28.1 178.3-3.476 18.584-10.322 24.816-16.948 25.425-14.4 1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25 5.342-39.5 3.652-3.793 67.107-61.51 68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608 69.142-14.845 10.194-26.894 9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7 18.45-13.7 108.446-47.248 144.628-62.3c68.872-28.647 83.183-33.623 92.511-33.789 2.052-.034 6.639.474 9.61 2.885a10.452 10.452 0 0 1 3.53 6.716 43.765 43.765 0 0 1 .417 9.769Z"></path>
+              </svg>
+            </a>
+            <a href="https://youtube.com/@iksm-coding" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="#ffffff" height="36" width="36" style="filter: drop-shadow(0 0 0.2rem #ffffff);">
+                  <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+              </svg>
+            </a>
+            <a href="https://paypal.me/waleedthemod" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="#ffffff" height="36" width="36" style="filter: drop-shadow(0 0 0.2rem #ffffff);">
+                  <path d="M111.4 295.9c-3.5 19.2-17.4 108.7-21.5 134-.3 1.8-1 2.5-3 2.5H12.3c-7.6 0-13.1-6.6-12.1-13.9L58.8 46.6c1.5-9.6 10.1-16.9 20-16.9 152.3 0 165.1-3.7 204 11.4 60.1 23.3 65.6 79.5 44 140.3-21.5 62.6-72.5 89.5-140.1 90.3-43.4.7-69.5-7-75.3 24.2zM357.1 152c-1.8-1.3-2.5-1.8-3 1.3-2 11.4-5.1 22.5-8.8 33.6-39.9 113.8-150.5 103.9-204.5 103.9-6.1 0-10.1 3.3-10.9 9.4-22.6 140.4-27.1 169.7-27.1 169.7-1 7.1 3.5 12.9 10.6 12.9h63.5c8.6 0 15.7-6.3 17.4-14.9.7-5.4-1.1 6.1 14.4-91.3 4.6-22 14.3-19.7 29.3-19.7 71 0 126.4-28.8 142.9-112.3 6.5-34.8 4.6-71.4-23.8-92.6z"></path>
+              </svg>
+            </a>
+            <a href="https://github.com/iksmcoding" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" fill="#ffffff" height="36" width="36" style="filter: drop-shadow(0 0 0.2rem #ffffff);">
+                  <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+              </svg>
+            </a>
+            <a href="https://twitter.com/iksm_coding" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#ffffff" height="36" width="36" style="filter: drop-shadow(0 0 0.2rem #ffffff);">
+                  <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+              </svg>
+            </a>
+            <a href="https://tiktok.com/@iksm_coding" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#ffffff" height="36" width="36" style="filter: drop-shadow(0 0 0.2rem #ffffff);">
+                  <path d="M448 209.91a210.06 210.06 0 0 1-122.77-39.25v178.72A162.55 162.55 0 1 1 185 188.31v89.89a74.62 74.62 0 1 0 52.23 71.18V0h88a121.18 121.18 0 0 0 1.86 22.17A122.18 122.18 0 0 0 381 102.39a121.43 121.43 0 0 0 67 20.14Z"></path>
+              </svg>
+            </a>
+
+
+
+            <a href="https://roblox.com/users/3324315456" target="_blank" rel="noopener noreferrer">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="30.36 84.71 135.82 135.82" fill="#ffffff" height="36" width="36" style="filter: drop-shadow(0 0 0.2rem #ffffff);">
+                <path d="m59.06 84.709-28.7 107.116 107.115 28.701 28.702-107.116Zm32.445 55.499 18.825 5.044-5.299 19.775-18.825-5.044z"></path>
+              </svg>
+            </div>
+        </a>
+    </div>
+    <audio id="myAudio" autoplay loop>
+        <source src="media/iksm.mp3" type="audio/mpeg">
+    </audio>
+
+
+<script src="static/userinfo/script.js"></script>
+<script src="static/assets/js/enter.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+    var roleIconWrapper = document.querySelector('.role-icon-wrapper');
+    if (roleIconWrapper.innerHTML.trim() === '') {
+        roleIconWrapper.style.display = 'none';
+    }
+</script>
+
+<script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
+  <script>
+window.addEventListener("load", (event) => {
+
+    new cursoreffects.rainbowCursor({
+  length: 3,
+  colors: ["#ffffff"],
+  size: 4,
+});
+});
+  </script>
+  
+
+<script>
+function getElapsedTime(startTimestamp) {
+    let currentTime = new Date();
+    let elapsedTime = currentTime - new Date(startTimestamp);
+    let seconds = Math.floor((elapsedTime / 1000) % 60);
+    let minutes = Math.floor((elapsedTime / (1000 * 60)) % 60);
+    let hours = Math.floor((elapsedTime / (1000 * 60 * 60)) % 24);
+    return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+}
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const discordApi = 'http://127.0.0.1:3000/user/1184009692545028100';
+        fetch(discordApi)
+            .then(response => response.json())
+            .then(data => {
+                if (data.success !== true) {
+                    console.error('I can\'t find user');
+
+                    var discordrpcissue = document.getElementById("discordrpcissue");
+
+                    discordrpcissue.innerHTML = `
+                    <div style="width:auto;background-color:rgb(255, 255, 255, 0.09);border:1px solid rgb(255, 255, 255, 0.2);margin-top:8px;margin-bottom:5px;padding: 10px;border-radius: 15px;position: relative;display: inline-flex;place-items: center">
+                        <div>
+                            <h1 style="color:#ffffff;margin-right:3px;text-align: left;padding: 0;margin: 0 0 0 5px;font-size: 19.7px;max-width: 240px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis">
+                                <svg style="vertical-align:-3px;font-size:22px;color:#ff3333" width="1em" height="1em" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="#000000" fill-rule="evenodd" d="M10 3a7 7 0 100 14 7 7 0 000-14zm-9 7a9 9 0 1118 0 9 9 0 01-18 0zm8.423-3a.923.923 0 00-.923.923v.385a1 1 0 11-2 0v-.385A2.923 2.923 0 019.423 5H10c1.941 0 3.5 1.591 3.5 3.516 0 .927-.48 1.8-1.276 2.29l-1.7 1.046a1 1 0 01-1.048-1.704l1.7-1.046a.691.691 0 00.324-.586C11.5 7.679 10.82 7 10 7h-.577zm.587 8a1 1 0 100-2H10a1 1 0 100 2h.01z"></path> </g></svg>
+                                 User not found
+                            </h1>
+                            <h3 style="color:#ffffff;text-align: left;margin: 3.5px 0 0 5px;padding: 0;font-size: 14.6px;font-weight: 520">Join <a target="_blank" style="color:#bbbbbb;text-decoration:none" href="https://discord.gg/bio-link">discord.gg/bio-link</a> to display your status.</h3>
+                        </div>
+                    </div>`;
+
+                    return;
+                }
+
+    
+                const discordrpc = document.getElementById('discordrpc');
+    
+                const discordContainer = document.createElement('div');
+                discordContainer.className = 'layout_2_4510bb0b2f33c8542865ef1267675955_double_wrapper__E_qyW discordcontainer';
+                discordContainer.style = 'flex-basis: 50% margin-bottom: 10px;background-color: rgb(255, 255, 255, 0.09);border: 1px solid rgb(255, 255, 255, 0.02);border-radius: 15px';
+    
+                const avatar = document.createElement('img');
+                avatar.src = data.data.discord_user.avatar;
+                avatar.height = '65';
+                avatar.draggable = 'true';
+                avatar.width = '65';
+                avatar.className = 'avatarcontainer imgundragable';
+                avatar.style = 'border: 2px solid rgb(255, 255, 255, 0.2)!important';
+                discordContainer.appendChild(avatar);
+    
+                const infoDiv = document.createElement('div');
+                infoDiv.className = 'infocontainer';
+    
+                const username = document.createElement('h1');
+                username.id = 'username22';
+                username.style = 'color: rgb(255 255 255);margin-right: 3px;width: 100%';
+                username.textContent = `${data.data.discord_user.username}`;
+                infoDiv.appendChild(username);
+    
+
+                const statusDiv = document.createElement('div');
+                statusDiv.id = 'status22';
+
+                const activities = document.createElement('h3');
+                activities.id = 'activities22';
+                activities.style = 'color: rgb(255 255 255);display: block;justify-content: left;margin-top: 4.5px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap; width: auto;';
+                let activityType = '';
+                if (data.data.activities && data.data.activities.length > 0) {
+                    let streamingActivity = data.data.activities.find(activity => activity.type === 'STREAMING');
+                    let playingActivity = data.data.activities.find(activity => activity.type === 'PLAYING');
+                    let listeningActivity = data.data.activities.find(activity => activity.type === 'LISTENING');
+                    let customActivity = data.data.activities.find(activity => activity.type === 'CUSTOM');
+                    let activityText = '';
+                    if (listeningActivity) {
+                        activityType = 'LISTENING';
+                        let details = listeningActivity.details || '';
+                        let name = listeningActivity.name || '';
+                        let timestamps = listeningActivity.timestamps;
+                        let start = new Date(timestamps.start);
+                        let end = new Date(timestamps.end);
+
+                        let totalDuration = Math.floor((end - start) / 1000);
+                        let totalMinutes = Math.floor(totalDuration / 60);
+                        let totalSeconds = totalDuration % 60;
+
+                        let intervalId = setInterval(function() {
+                            let currentTime = new Date();
+                            let elapsedTime = Math.floor((currentTime - start) / 1000);
+                            let elapsedMinutes = Math.floor(elapsedTime / 60);
+                            let elapsedSeconds = elapsedTime % 60;
+
+                            let formattedElapsedTime = `${elapsedMinutes.toString().padStart(2, '0')}:${elapsedSeconds.toString().padStart(2, '0')}`;
+                            let formattedTotalDuration = `${totalMinutes.toString().padStart(2, '0')}:${totalSeconds.toString().padStart(2, '0')}`;
+
+                            activityText = `${name}${details ? '<br>' + details : ''}<br>${formattedElapsedTime} / ${formattedTotalDuration}`;
+                            activities.innerHTML = activityText;
+
+                            if (elapsedTime >= totalDuration) {
+                                clearInterval(intervalId);
+                                formattedElapsedTime = formattedTotalDuration;
+                                activityText = `${name}${details ? '<br>' + details : ''}<br>${formattedElapsedTime} / ${formattedTotalDuration}`;
+                                activities.innerHTML = activityText;
+                            }
+                        }, 100);
+                    } else if (streamingActivity) {
+                        activityType = 'STREAMING';
+                        let details = streamingActivity.details || '';
+                        let name = streamingActivity.name || '';
+                        activityText = `Streaming ${name}${details ? '<br>' + details : ''}`;
+                        activities.innerHTML = activityText;
+                    } else if (playingActivity) {
+                        let details = playingActivity.details || '';
+                        if (playingActivity.timestamps) {
+                            setInterval(function() {
+                                let elapsedTime = getElapsedTime(playingActivity.timestamps.start);
+                                activityText = `Playing ${playingActivity.name}${details ? '<br>' + details : ''}<br>Elapsed: ${elapsedTime}`;
+                                activities.innerHTML = activityText; 
+
+                                if (details.length > elapsedTime.length) {
+                                    activities.style.width = 'auto';
+                                } else {
+                                    activities.style.width = '170px';
+                                }
+                            }, 100);
+                        } else {
+                            activityText = `Playing ${playingActivity.name}${details ? '\n' + details : ''}`;
+                            activities.innerHTML = activityText.replace("\n", "<br>"); 
+                        }
+                    } else if (customActivity) {
+                        let activityText = customActivity.state;
+                        if (customActivity.emoji) {
+                            let emojiText = '';
+                            if (customActivity.emoji.animated === null) {
+                                emojiText = customActivity.emoji.name;
+                            } else if (customActivity.emoji.animated) {
+                                emojiText = `<img src="https://cdn.discordapp.com/emojis/${customActivity.emoji.id}.gif" width="19" height="19" draggable="false" class="emojicss">`;
+                            } else {
+                                emojiText = `<img src="https://cdn.discordapp.com/emojis/${customActivity.emoji.id}.png" width="19" height="19" draggable="false" class="emojicss">`;
+                            }
+                            activityText = `<div style="display: flex; align-items: center;">${emojiText}<span style="text-overflow: ellipsis; overflow: hidden;">${activityText}</span></div>`;
+                        }
+                        activities.innerHTML = `<div id="activities22" style="color: rgb(255, 255, 255); display: block; justify-content: left; margin-top: 4.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: auto;">${activityText}</div>`;
+                    } else {
+                        activities.textContent = 'No activity';
+                    }
+                } else {
+                    activities.textContent = 'No activity';
+                }
+
+                infoDiv.appendChild(activities);
+    
+
+                if (data.data.discord_status === 'dnd') {
+                    statusDiv.className = 'statuscontainer_dnd';
+                } else if (data.data.discord_status === 'idle') {
+                    statusDiv.className = 'statuscontainer_idle';
+                } else if (data.data.discord_status === 'online') {
+                    statusDiv.className = 'statuscontainer_online';
+                } else if (data.data.discord_status === 'offline') {
+                    statusDiv.className = 'statuscontainer_offline';
+                }
+
+                if (activityType === 'STREAMING') {
+                    statusDiv.className = ' statuscontainer_streaming';
+                }
+
+                statusDiv.style = 'left: 55.5px; font-size: 19.5px; margin-bottom: 3px;';
+                statusDiv.innerHTML = getStatus(data.data.discord_status);
+                infoDiv.appendChild(statusDiv);
+
+                let largeImageUrl;
+                let smallImageUrl;
+
+                if (data.data.activities && data.data.activities.length > 0) {
+                    let streamingActivity = data.data.activities.find(activity => activity.type === 'STREAMING');
+                    let playingActivity = data.data.activities.find(activity => activity.type === 'PLAYING');
+                    let listeningActivity = data.data.activities.find(activity => activity.type === 'LISTENING');
+                    let activity;
+                    if (streamingActivity) {
+                        activity = streamingActivity;
+                    } else if (listeningActivity) {
+                        activity = listeningActivity;
+                    } else if (playingActivity) {
+                        activity = playingActivity;
+                    }
+
+                    if (activity) {
+                    if (activity.assets && activity.assets.largeImage) {
+                        if (activity.assets.largeImage.startsWith('spotify:')) {
+                        largeImageUrl = activity.assets.largeImage.replace('spotify:', 'https://i.scdn.co/image/');
+                        } else {
+                        if (activity.assets.largeImage.startsWith('mp:attachments/')) {
+                            largeImageUrl = 'https://cdn.discordapp.com/attachments/' + activity.assets.largeImage.replace('mp:attachments/', '');
+                        } else {
+                            largeImageUrl = 'https://cdn.discordapp.com/app-assets/' + activity.application_id + '/' + activity.assets.largeImage + '.png';
+                        }
+                        }
+                    }
+
+                    if (activity.assets && activity.assets.smallImage) {
+                        if (activity.assets.smallImage.startsWith('spotify:')) {
+                        smallImageUrl = activity.assets.smallImage.replace('spotify:', 'https://i.scdn.co/image/');
+                        } else {
+                        if (activity.assets.smallImage.startsWith('mp:attachments/')) {
+                            smallImageUrl = 'https://cdn.discordapp.com/attachments/' + activity.assets.smallImage.replace('mp:attachments/', '');
+                        } else {
+                            smallImageUrl = 'https://cdn.discordapp.com/app-assets/' + activity.application_id + '/' + activity.assets.smallImage + '.png';
+                        }
+                        }
+                    }
+                    }
+                }
+
+                discordContainer.appendChild(infoDiv);
+
+                if (largeImageUrl) {
+                    const largeImage = document.createElement('img');
+                    largeImage.src = largeImageUrl;
+                    largeImage.style = 'height: 63px;width: 63px;border-radius: 10px; margin-left:10px;';
+                    discordContainer.appendChild(largeImage);
+                }
+
+                if (smallImageUrl) {
+                    const smallImage = document.createElement('img');
+                    smallImage.src = smallImageUrl;
+                    smallImage.style = 'height: 25px;width: 25px;border-radius: 150px;position: absolute;bottom: 11px;right: 2px; margin-left:10px;';
+                    discordContainer.appendChild(smallImage);
+                }
+
+
+                discordrpc.appendChild(discordContainer);
+            }).catch(error => console.error('Error fetching data from Discord API:', error));
+    
+      function getStatus(status) {
+          switch (status) {
+                case 'dnd':
+                    return '<svg style="background-color: rgb(255, 255, 255, 0.2)!important; border-radius: 50%!important; padding: 0.5px 0.5px 0.2px 0.5px!important;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2zm5 11H7v-2h10v2z" fill="currentColor"></path></svg>';
+                case 'idle':
+                    return '<svg style="background-color: rgb(255, 255, 255, 0.2)!important; border-radius: 50%!important; padding: 0.5px 0.5px 0.2px 0.5px!important;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"><path fill="currentColor" d="M235.54 150.21a104.84 104.84 0 0 1-37 52.91A104 104 0 0 1 32 120a103.09 103.09 0 0 1 20.88-62.52a104.84 104.84 0 0 1 52.91-37a8 8 0 0 1 10 10a88.08 88.08 0 0 0 109.8 109.8a8 8 0 0 1 10 10Z"></path></svg>';
+                case 'online':
+                    return '<svg style="background-color: rgb(255, 255, 255, 0.2)!important; border-radius: 50%!important; padding: 0.5px 0.5px 0.2px 0.5px!important;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8a8 8 0 0 1-8 8a8 8 0 0 1-8-8a8 8 0 0 1 8-8m0 2a6 6 0 0 0-6 6a6 6 0 0 0 6 6a6 6 0 0 0 6-6a6 6 0 0 0-6-6m0 2a4 4 0 0 1 4 4a4 4 0 0 1-4 4a4 4 0 0 1-4-4a4 4 0 0 1 4-4Z"></path></svg></div>';
+                case 'offline':
+                    return '<svg style="background-color: rgb(255, 255, 255, 0.2)!important; border-radius: 50%!important; padding: 0.5px 0.5px 0.2px 0.5px!important;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M16.06 7.94a1.5 1.5 0 0 1 0 2.12L14.122 12l1.94 1.94a1.5 1.5 0 0 1-2.122 2.12L12 14.122l-1.94 1.94a1.5 1.5 0 0 1-2.12-2.122L9.878 12l-1.94-1.94a1.5 1.5 0 1 1 2.122-2.12L12 9.878l1.94-1.94a1.5 1.5 0 0 1 2.12 0ZM0 12C0 5.373 5.373 0 12 0s12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12Zm12-9a9 9 0 1 0 0 18a9 9 0 0 0 0-18Z"></path></svg></div>'
+                default:
+                    return '';
+          }
+      }
+  });
+  </script>
+
+<script>
+    var roleIconWrapper = document.querySelector('.role-icon-wrapper');
+    if (roleIconWrapper.innerHTML.trim() === '') {
+        roleIconWrapper.style.display = 'none';
+    }
+</script>
+
+<script>
+    $(document).ready(function() {
+    $('#myLink').css('cursor', 'pointer');
+});
+</script>
+<script>
+fetch('https://undefined.rip/serverinfo?link=rEBDcxH22c')
+ .then(response => response.json())
+ .then(data => {
+    const discordServer = document.getElementById('discordserver');
+    discordServer.className = 'layout_2_4510bb0b2f33c8542865ef1267675955_double_wrapper__E_qyW';
+    discordServer.style = 'flex-basis: 50%';
+
+    const myLink = document.createElement('a');
+    myLink.setAttribute('style', 'cursor: pointer');
+    myLink.target = '_blank';
+    myLink.href = 'https://discord.gg/rEBDcxH22c';
+
+    const doubleWrapper = document.createElement('div');
+    doubleWrapper.className = 'layout_2_4510bb0b2f33c8542865ef1267675955_double_wrapper__E_qyW';
+    doubleWrapper.style = 'flex-basis: 50%;font-size:10px;margin-bottom: 10px;';
+
+    const other = document.createElement('div');
+    other.className = 'layout_2_4510bb0b2f33c8542865ef1267675955_other__JPn53';
+    other.style = 'background-color: rgba(255, 255, 255, 0.09);border: 1px solid rgba(255, 255, 255, 0.106);';
+
+    const discordInvite = document.createElement('div');
+    discordInvite.className = 'layout_2_4510bb0b2f33c8542865ef1267675955_discord_invite__gJmuE';
+
+    const avatar = document.createElement('img');
+    avatar.src = data.avatar_url;
+    discordInvite.appendChild(avatar);
+
+    const guildInfo = document.createElement('div');
+    guildInfo.className = 'layout_2_4510bb0b2f33c8542865ef1267675955_guild_info__rVXiI';
+
+    const username = document.createElement('h1');
+    username.style = 'color: rgb(255, 255, 255);';
+    username.textContent = `${data.guild_name}`;
+    guildInfo.appendChild(username);
+
+    const memberCount = document.createElement('h3');
+    memberCount.style = 'color: rgba(255, 255, 255, 0.6);';
+    memberCount.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="6.5 6.5 3 3" style="font-size: 7px; color: rgb(35, 165, 89);">
+            <path fill="currentColor" d="M8 9.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3"></path>
+        </svg> 
+        ${data.online_members.toLocaleString()} Online  
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="6.5 6.5 3 3" style="font-size: 7px; color: rgb(128, 132, 142); margin-left: 7px;">
+            <path fill="currentColor" d="M8 9.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3"></path>
+        </svg> 
+        ${data.total_members.toLocaleString()} Members
+    `;
+    guildInfo.appendChild(memberCount);
+
+    discordInvite.appendChild(guildInfo);
+    other.appendChild(discordInvite);
+    doubleWrapper.appendChild(other);
+    myLink.appendChild(doubleWrapper);
+    discordServer.appendChild(myLink);
+ });
+</script>
+
+<script>
+let text = `programmer.lol`;
+let formattedText = text.replace(/(\r\n|\n|\r)/g, '<br>');
+console.log(formattedText)
+
+</script>
+
+
+<script>
+   var TxtType = function(el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 1000;
+    this.txt = '';
+    this.isDeleting = false;
+    this.messages = this.toRotate[this.loopNum].split('|').map(message => message.replace(/!br!/g, '<br/>'));
+    this.messageIndex = 0;
+    this.tick();
+};
+
+window.onload = function() {
+    var elements = document.getElementsByClassName('typewrite');
+    for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-type');
+        toRotate = toRotate.replace(/\n|\r\n/g, '\\n');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+            var parsed = JSON.parse(toRotate); 
+            for (var j=0; j<parsed.length; j++) {
+                parsed[j] = parsed[j].replace(/\\n/g, '\n').replace(/\n/g, '!br!');
+            }
+            new TxtType(elements[i], parsed, period);
+        }
+    }
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    document.body.appendChild(css);
+};
+
+TxtType.prototype.tick = function() {
+    var fullTxt = this.messages[this.messageIndex];
+
+    if (this.isDeleting) {
+        if (this.txt.endsWith('<br/>')) {
+            this.txt = this.txt.substring(0, this.txt.lastIndexOf('<'));
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        }
+    } else {
+        if (fullTxt.substring(this.txt.length, this.txt.length + 5) === '<br/>') {
+            this.txt += '<br/>';
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+    }
+
+    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+    var that = this;
+    var delta = 200 - Math.random() * 100;
+
+    if (this.isDeleting) { 
+        delta /= 4;
+        if (this.txt === '') {
+            this.isDeleting = false;
+            if (++this.messageIndex >= this.messages.length) {
+                this.messageIndex = 0;
+                this.loopNum++;
+                if (this.loopNum >= this.toRotate.length) {
+                    this.loopNum = 0;
+                }
+                this.messages = this.toRotate[this.loopNum].split('|').map(message => message.replace(/!br!/g, '<br/>'));
+            }
+            delta = 500;
+        }
+    }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+    }
+
+    setTimeout(function() {
+        that.tick();
+    }, delta);
+};
+</script>
+
+
+
+    <script>
+particlesJS("particles-js", {
+      particles: {
+        number: {
+          value: 100,
+          density: {
+            enable: true,
+            value_area: 800,
+          },
+        },
+        color: {
+          value: "#ffffff", 
+        },
+        shape: {
+          type: "circle", 
+        },
+        opacity: {
+          value: 0.8,
+          random: true,
+          anim: {
+            enable: true,
+            speed: 1,
+            opacity_min: 0.1,
+            sync: false,
+          },
+        },
+        size: {
+          value: 5,
+          random: true,
+          anim: {
+            enable: true,
+            speed: 2,
+            size_min: 1,
+            sync: false,
+          },
+        },
+        line_linked: {
+          enable: false,
+        },
+        move: {
+          enable: true,
+          speed: 1, 
+          direction: "bottom",
+          random: true,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+        },
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: {
+            enable: false,
+          },
+          onclick: {
+            enable: false,
+          },
+          resize: true,
+        },
+        modes: {
+          grab: {
+            distance: 400,
+            line_linked: {
+              opacity: 1,
+            },
+          },
+          bubble: {
+            distance: 250,
+            size: 0,
+            duration: 2,
+            opacity: 0,
+          },
+          repulse: {
+            distance: 400,
+            duration: 0.4,
+          },
+          push: {
+            particles_nb: 4,
+          },
+          remove: {
+            particles_nb: 2,
+          },
+        },
+      },
+      retina_detect: true,
+    });
+
+    </script>
+</body>
+</html>
