@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background: #000000;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            position: relative;
+        }
+
+        .hub {
+            display: block;
+            font-weight: bold;
+            font-size: 4vw;
+            text-align: center;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            float: left;
+        }
+
+        .hub span:nth-child(2) {
+            background: #000000;
+            color: #fff;
+            border-radius: 0.5vw;
+            padding: 0.5vw 1vw;
+            display: inline-block;
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .btn {
+            width: 300px;
+            border-radius: 5px;
+            padding: 15px 0;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            margin: 10px;
+            color: #fff;
+            position: relative;
+            display: inline-block;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btnO {
+            background-color: #444444;
+
+        }
+
+        .btnO:hover {
+            background-color: #4100f3;
+        }
+
+        .btnO:active {
+            transform: translateY(2px);
+            box-shadow: 0px 3px 0px 0px #4100f3;
+        }
+    </style>
+    <title>Tools</title>
+</head>
+<body>
+    <div class="hub">
+        <span>Tools</span>
+    </div>
+    <div class="buttons-container">
+        <a href="https://iksm.lol/tower" class="btn btnO">Game</a>
+        <a href="https://iksm.lol/checker" class="btn btnO">Checker</a>
+        <br>
+        <br>
+        <a href="https://iksm.lol/web" class="btn btnO">Go Back</a>
+    </div>
+</body>
+</html>
