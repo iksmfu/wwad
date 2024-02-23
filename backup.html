@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+  <meta charset="utf-8">
+  <title>iksm</title>
+  <meta content="never" property="og:title">
+  <meta content="never" name="description">
+  <meta content="never" property="og:description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta property="og:image" content="image/iksm.gif"/>
+  <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1208811539927138304/1210522941184278538/iksm.gif?ex=65eade57&is=65d86957&hm=a8368a723193d5d54de87838a311ff712cfa49526482121881ed845b78e7fe29&">
+</head>
+<link rel="stylesheet" href="mercfiles/merc.css">
+
+
+
+
+
+
+
+<style>
+body, html {
+    margin: 0;
+    font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+    background: #000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    width: 600px;
+    justify-content: center; 
+}
+
+li {
+    padding: 15px 20px;
+}
+
+a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    position: relative;
+}
+
+a:after {
+    background: #fff;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}
+  
+
+
+
+
+  body {
+  width: 100vw;
+  height: 100vh;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: "/keygenfiles/esex.mp4";
+  margin: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+}
+
+.card {
+  width: 400px;
+  padding: 20px;
+  height: 400px;
+  margin: 40px 0;
+  background: rgb(0 0 0 / 5%);
+  box-shadow: inset 1px 1.5px 2px #fff9, inset 1px -0.5px 2px #ffffff4d,
+    0 0.6021873017743928px 0.6021873017743928px -1.25px #0000002e,
+    0 2.288533303243457px 2.288533303243457px -2.5px #00000029,
+    0 10px 10px -3.75px #00000010;
+  backdrop-filter: blur(40px);
+  border-radius: 30px;
+  position: relative;
+  min-width: 510px;
+  padding: 1em;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255 255 255 / 40%);
+  border-radius: 4px;
+}
+
+.card::after {
+  margin-left: -30px;
+}
+
+.card::before {
+  width: 50px;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s;
+}
+
+.left-side {
+  transform: rotateY(45deg) translateX(-1000px);
+  animation: animate-left 1s forwards;
+}
+.right-side {
+  transform: rotateY(-45deg) translateX(1000px);
+  animation: animate-right 1s forwards;
+}
+
+.center-side {
+  transform: rotateX(0deg) scale(0.9) translateY(-1000px);
+  animation: animate-center 0.7s forwards;
+}
+
+.row {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.small {
+  width: 150px;
+  height: 150px;
+}
+
+.button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  padding: 6px 12px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.25s;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.card:has(img) {
+  padding: 0;
+}
+
+label {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 26px;
+}
+
+.right-side .card {
+  width: 200px;
+  height: 400px;
+}
+
+@keyframes animate-left {
+  100% {
+    transform: rotateY(45deg) translateX(0px);
+  }
+}
+
+@keyframes animate-right {
+  100% {
+    transform: rotateY(-45deg) translateX(0px);
+  }
+}
+
+@keyframes animate-center {
+  100% {
+    transform: rotateX(0deg) scale(0.9) translateY(0px);
+  }
+}
+
+.image-container {
+    display: flex;
+}
+
+.image-spacer {
+    margin-right: 10px;
+}
+
+#background-video {
+    position: fixed; 
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; 
+}
+
+#typed-out-text {
+    height: 20px;
+}
+
+</style>
+
+<audio src="mercfiles/mercsmusic.mp3" loop id="audio" onplay="audio.volume = 0.1"></audio>
+
+<img id="background-video" src="https://cdn.discordapp.com/attachments/1208811539927138304/1210522174088159283/DK_SUPP.jpg?ex=65eadda0&is=65d868a0&hm=0a8b4933cf6a40407451e5a0f191f978b7aa3afa391e4859d8d628d48a9dfa6f&" a>
+
+
+
+
+</div>
+<div class="side center-side">
+  <div class="card">
+      <img class="profile-picture" alt="cum" src="image/iksm.gif" style="margin-bottom: 0em">
+      <h1 style="font-size: 60px;margin-bottom: 0;padding-bottom: 0" class="glow">iksm</h1>
+      
+      
+      
+      
+      <p id="typed-out-text" class="glow"> iksm</p>
+      <div class="flex justify-center items-center space-x-2">
+        <div style="text-align: center;">
+            <a href="https://discord.com/users/1184009692545028100" target="_blank">
+              <img src="https://discord.c99.nl/widget/theme-4/1184009692545028100.png" style="
+              width: 300px;
+             "></a>
+        </div>
+    </div>
+  </div>
+        <div class="image-container">
+          <a href="https://t.me/esexable" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" fill="#ffffff" height="36" width="36" style="filter: drop-shadow(0 0 0.2rem #ffffff);">
+                <path d="M248 8C111.033 8 0 119.033 0 256s111.033 248 248 248 248-111.033 248-248S384.967 8 248 8Zm114.952 168.66c-3.732 39.215-19.881 134.378-28.1 178.3-3.476 18.584-10.322 24.816-16.948 25.425-14.4 1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25 5.342-39.5 3.652-3.793 67.107-61.51 68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608 69.142-14.845 10.194-26.894 9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7 18.45-13.7 108.446-47.248 144.628-62.3c68.872-28.647 83.183-33.623 92.511-33.789 2.052-.034 6.639.474 9.61 2.885a10.452 10.452 0 0 1 3.53 6.716 43.765 43.765 0 0 1 .417 9.769Z"></path>
+            </svg>
+          </a>
+        
+</div>
+</div>
+
+<script>
+    //Created by Title bar Maker (http://bosiljak.hr/titlemaker)
+                          function tb8_makeArray(n){
+                          this.length = n;
+                          return this.length;
+                          }
+                          tb8_messages = new tb8_makeArray(3);
+                          tb8_messages[0] = "iksm | D.K";
+                          tb8_messages[2] = "iksm is Ur Dad";
+                          tb8_messages[2] = "iksm on top";
+                          tb8_rptType = 'infinite';
+                          tb8_rptNbr = 5;
+                          tb8_speed = 150;
+                          tb8_delay =1500;
+                          var tb8_counter=1;
+                          var tb8_currMsg=0;
+                          var tb8_tekst ="";
+                          var tb8_i=0;
+                          var tb8_TID = null;
+                          function tb8_pisi(){
+                          tb8_tekst = tb8_tekst + tb8_messages[tb8_currMsg].substring(tb8_i, tb8_i+1);
+                          document.title = tb8_tekst;
+                          tb8_sp=tb8_speed;
+                          tb8_i++;
+                          if (tb8_i==tb8_messages[tb8_currMsg].length){
+                          tb8_currMsg++; tb8_i=0; tb8_tekst="";tb8_sp=tb8_delay;
+                          }
+                          if (tb8_currMsg == tb8_messages.length){
+                          if ((tb8_rptType == 'finite') && (tb8_counter==tb8_rptNbr)){
+                          clearTimeout(tb8_TID);
+                          return;
+                          }
+                          tb8_counter++;
+                          tb8_currMsg = 0;
+                          }
+                          tb8_TID = setTimeout("tb8_pisi()", tb8_sp);
+                          }
+                          tb8_pisi()
+
+  </script>
+
+<script  src="mercfiles/script.js"></script>
