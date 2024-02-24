@@ -1,10 +1,10 @@
 const typedOut = document.getElementById("typed-out-text"); // Get the element where you want to display the typed text
 
 const TEXT = [
-    "never owns u",
-    "wrd 2 my muddda",
-    "you built like a discombobulated wet tonail",
-    "smd lil nigga"
+    "iksm on top",
+    "what u want",
+    "D.K on Top",
+    "nigga"
 ];
 
 async function sleep(ms) {
